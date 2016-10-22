@@ -1,14 +1,13 @@
 {
-  "name": "Gulp-webpack-boilerplate",
-  "version": "1.1.0",
+  "name": "Weather",
+  "version": "1.0.0",
   "description": "My gulp template",
-  "author": "Graboviy Vadym <hraboviyvadim@gmail.com>",
+  "author": "anonymous",
   "scripts": {
     "build": "trash /build && NODE_ENV=production gulp build"
   },
   "repository": {
-    "type": "git",
-    "url": "https://github.com/hraboviyvadim/gulp-boilerplate"
+    "type": "git"
   },
   "devDependencies": {
     "autoprefixer": "~6.0.3",
@@ -38,6 +37,7 @@
     "gulp-tinypng-nokey": "^1.0.4",
     "gulp-util": "^3.0.7",
     "gulp.spritesmith": "^4.1.0",
+    "highcharts": "^5.0.0",
     "i": "^0.3.5",
     "jquery": "^3.0.0",
     "lodash": "^3.10.1",

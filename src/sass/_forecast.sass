@@ -1,0 +1,33 @@
+.forecast
+	margin: 0 -10px
+	padding-top: 50px
+	font-size: 0
+	.forecast__col
+		display: inline-block
+		vertical-align: top
+		width: 20%
+		padding: 0 20px
+	.forecast__item
+		position: relative
+		padding: 17px 10px
+		border-radius: 3px
+		border: 1px solid transparent
+		text-align: center
+		font-size: 22px
+		color: $dark
+		transition: background 200ms, box-shadow 200ms
+		cursor: pointer
+		&:hover, &.active
+			background: rgba($green, 0.1)
+	.forecast__day
+		font-size: 28px
+		font-weight: bold
+	.forecast__icon
+		padding: 10px 0
+	.forecast__temp
+		& > span
+			display: inline-block
+			vertical-align: middle
+			margin: 0 10px
+	.forecast__mintemp
+		color: #B8B8B8

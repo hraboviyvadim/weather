@@ -9,14 +9,38 @@
 <!-- BEGIN content -->
 <div class="out">
     <!-- page content -->
-    <div class="l-content">
-        {% block content %}{% endblock %}
-    </div>
+    {% block content %}{% endblock %}
 </div>
 <!-- END content -->
 
-<!-- footer -->
-{% include "../blocks/_footer.html" %}
+<!-- BEGIN modal -->
+<div class="modal" data-name="settings">
+    <div class="modal__in">
+        <button class="modal__close js-modal-close">
+            <img src="img/close.svg" alt="">
+        </button>
+        <div class="modal__content">
+            <div class="settings">
+                <div class="settings__title">Settings:</div>
+                <ul class="settings__list">
+                    <li class="settings__item">
+                        <div class="settings__text">Choose units format:</div>
+                        <div class="settings__field">
+                            <label class="select js-select">
+                                <div class="select__value">metric</div>
+                                <select id="unitsFormat">
+                                    <option value="metric">Metric (°C, m/s)</option>
+                                    <option value="imperial">Imperial (F, miles/h)</option>
+                                </select>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END modal -->
 
 <!-- BEGIN scripts -->
 <script type="text/javascript" src="js/common.js"></script>

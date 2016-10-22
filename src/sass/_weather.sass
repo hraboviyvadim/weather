@@ -1,0 +1,39 @@
+.weather
+	position: relative
+	color: $dark
+	+clr
+	font-size: 18px
+	.weather__col
+		float: left
+		width: 60%
+		&:first-child
+			width: 40%
+	.weather__time
+		padding-top: 40px
+		font-size: 14px
+		margin-bottom: 20px
+	.weather__location
+		margin-bottom: 30px
+		font-size: 36px
+	.weather__major
+		display: inline-block
+		text-align: center
+		margin-bottom: 20px
+	.weather__descr
+		font-size: 22px
+		&::first-letter
+			text-transform: uppercase
+	.weather__temperature
+		display: inline-block
+		vertical-align: middle
+		font-size: 48px
+		font-weight: 300
+.tempChart
+	position: relative
+	height: 400px
+	& > div
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
